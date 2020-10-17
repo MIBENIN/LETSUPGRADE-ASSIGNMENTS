@@ -1,0 +1,45 @@
+package assiday32;
+import java.util.Scanner;
+
+public class main2 {
+    public static void main(String[] args){
+    	Scanner sc=new Scanner(System.in);
+    	
+    	System.out.println("_______FORM_______");
+    	System.out.println();
+    	
+    	
+    	System.out.print("ENTER THE NAME :");
+    	String EMPLOYEE_NAME=sc.nextLine();
+    	
+    	System.out.print("ENTER THE DATE OF BIRTH :");
+    	int DOB=sc.nextInt();
+    	
+    	System.out.print("ENTER THE MONTH OF BIRTH :");
+    	String MOB=sc.next();
+    	
+    	System.out.print("ENTER THE MONTHLY SALARY :");
+    	int SALARY=sc.nextInt();
+    	int ANNUAL_SALARY=(SALARY*12);
+    	System.out.println();
+    	
+    	System.out.println("YOUR NAME :"+EMPLOYEE_NAME);
+    	System.out.println("YOUT DATE OF BIRTH :"+DOB);
+    	System.out.println("YOUR MONTH OF BIRTH :"+MOB);
+    	System.out.println("YOUR ANNUAL SALARY :"+ANNUAL_SALARY);
+    	
+    	if(ANNUAL_SALARY>500000)
+    		System.out.print("YOU HAVE TO PAY 20% TAX ON YOUR SALARY");
+    	
+    	else if(ANNUAL_SALARY<=500000 && ANNUAL_SALARY>400000)
+    		System.out.print("YOU HAVE TO PAY 15% TAX ON YOUR SALARY");
+    	
+    	else if(ANNUAL_SALARY<=400000 && ANNUAL_SALARY>300000)
+    		System.out.print("YOU HAVE TO PAY 10% OF TAX ON YOUR SALARY");
+   
+        else if (ANNUAL_SALARY<=300000 && ANNUAL_SALARY>200000)
+    		 System.out.print("YOU HAVE TO PAY 5% OF TAX ON YOUR SALARY");
+        else
+        	System.out.print("YOU HAVE NOT TO PAY TAX ON YOUR SALARY");
+    }
+}

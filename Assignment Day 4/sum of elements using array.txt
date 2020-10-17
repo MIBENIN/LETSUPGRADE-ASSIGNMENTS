@@ -1,0 +1,28 @@
+package assignment4;
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args){
+	    	  int[]array=new int[5];
+	    	  
+	    	  System.out.print("ENTER THE ELEMENTS OF ARRAY :");
+	    	  for(int i=0;i<5;i++){
+	    		  Scanner sc=new Scanner(System.in);
+	    		  array[i]=sc.nextInt();
+	    	  }
+	    	  
+	    	  System.out.print("THE ARRAY ELEMENTS ARE :");
+	    	  for(int i=0;i<5;i++){
+	    		  System.out.print(+array[i]+ " ");
+	    	  }
+	    	  
+	    	  System.out.println();
+	    	  System.out.print("THE SUM OF ENTERED ELEMENTS :");
+	    	  int sum=0;
+	    	  for(int i=0;i<5;i++){
+	    		 sum=sum+array[i];
+	    	  }
+	    	  System.out.println(sum);
+	    	  
+	}
+}

@@ -1,0 +1,85 @@
+____________________________________________________main.java______________________________________
+
+
+
+
+package assignment42;
+
+import java.util.Scanner;
+
+public class main {
+      public static void main(String[] args){
+    	  Scanner sc=new Scanner(System.in);
+    	  avenger[] superhero=new avenger[5];
+    	  
+    	  
+    	for(int i=0;i<5;i++){
+    		System.out.println();
+    		System.out.println("SUPERHERO :"+(i+1));
+    	  superhero[i]=new avenger();
+    	
+    	  superhero[i].getdetails();
+        }
+    	
+    	  
+    	for(int i=0;i<5;i++){
+    	
+    	  superhero[i].displaydetails();
+        }
+    	
+      }
+      
+}
+
+
+
+
+
+________________________________________avenger.java________________________________________________
+
+package assignment42;
+import java.util.Scanner;
+
+public class avenger {
+      String name;
+      int age;
+      String power;
+      String weapon;
+      String planet;
+      
+      Scanner sc=new Scanner(System.in);
+      
+      public void getdetails(){
+    	  System.out.println("ENTER THE NAME OF YOUR SUPER HERO :");
+    	  name=sc.nextLine();
+    	  
+    	  System.out.println("ENTER THE AGE OF YOUR SUPER HERO :");
+    	  age=sc.nextInt();
+    	  
+    	  System.out.println("ENTER THE POWER OF YOUR SUPER HERO :");
+    	  power=sc.nextLine();
+    	  
+    	  sc.nextLine();
+    	  
+    	  System.out.println("ENTER THE WEAPON OF YOUR SUPER HERO :");
+    	  weapon=sc.nextLine();
+    	  
+    	  
+    	  System.out.println("ENTER THE PLANET OF YOUR SUPER HERO :");
+    	  planet=sc.nextLine();
+    	  
+      }
+      
+      public void displaydetails(){
+    	  System.out.println();
+    	  System.out.println("________YOUR SUPERHERO DETAILS________");
+    	  System.out.println();
+    	  System.out.println("THE NAME OF YOUR SUPER HERO :"+name);
+    	  System.out.println("THE AGE OF YOUR SUPER HERO :"+age);
+    	  System.out.println("THE POWER OF YOUR SUPER HERO :"+power);
+    	  System.out.println("THE WEAPON OF YOUR SUPER HERO :"+weapon);
+    	  System.out.println("THE PLANET OF YOUR SUPER HERO :"+planet);
+      }
+      
+      
+}

@@ -1,0 +1,57 @@
+
+package assiday3;
+import java.util.Scanner; 
+
+public class main {
+	public static void main(String[] args){
+		
+		Scanner sc=new Scanner(System.in);
+		
+	    System.out.print(" ________MARK LIST_______ ");
+	    System.out.println();                              //NEXT LINE
+	    System.out.println();                              
+	    System.out.println("EACH SUBJECT IS FOR 100 MARKS");
+	    System.out.println();                             
+	    
+		System.out.print("ENTER THE MARK FOR ENGLISH :");
+		int ENG=sc.nextInt();
+		
+		System.out.print("ENTER THE MARK FOR MATHS :");
+		int MAT=sc.nextInt();
+		
+		System.out.print("ENTER THE MARK FOR COMPUTER SCIENCE :");
+		int CS=sc.nextInt();
+		
+		System.out.print("ENTER THE MARK FOR PHYSICS :");
+		int PHY=sc.nextInt();
+		
+		System.out.print("ENTER THE MARK FOR CHEMISTRY :");
+		int CHE=sc.nextInt();
+		
+		int TOTAL_MARK=(ENG+MAT+CS+PHY+CHE);
+		System.out.println("YOU HAVE GOT  "+TOTAL_MARK+"  OUT OF 500");
+		
+		float PERCENTAGE=((float)TOTAL_MARK/500)*100;
+		
+		System.out.println();
+		
+		if(PERCENTAGE>80)
+			System.out.println("EXCELLENT,YOU GOT A GRADE");
+		
+		else if(PERCENTAGE<=80 && PERCENTAGE>60)
+			System.out.println("VERY GOOD,YOU GOT B GRADE");
+		
+		else if(PERCENTAGE<=60 && PERCENTAGE>50)
+		    System.out.println("GOOD,YOU GOT C GRADE");
+		
+		else if(PERCENTAGE<=50 && PERCENTAGE>40)
+			System.out.println("TRY HARD NEXT TIME,YOU GOT D GRADE");
+		
+		else
+			System.out.println("OOPS YOU FAILED,YOU GOT E GRADE");
+				
+	}
+
+}
+
+7:49 AM 11-Oct-20

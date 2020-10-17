@@ -1,0 +1,31 @@
+ASSIGNMENT DAY 2
+
+
+    _________________________________MAIN.JAVA____________________________________
+package java;
+public class main {
+    public static void main(String[] args){
+    	employee e1=new employee();
+    	employee e2=new employee();
+    	e1.name="saurabh";
+    	e1.age=25;
+    	e1.city="Mumbai";
+    	e2.name="rajkumar";
+    	e2.age=23;
+    	e2.city="Chennai";
+    	
+    	  public void display(){
+    		System.out.println("The Name is"+e1.name);
+                 }
+    }
+}
+
+    ___________________________________EMPLOYEE.JAVA____________________________________
+package java;
+public class employee {
+	String name;
+	int age;
+	String city;	
+}
+
+
