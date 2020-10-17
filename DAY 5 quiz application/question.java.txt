@@ -1,0 +1,27 @@
+package com.quizapplication;
+import java.util.Scanner;
+
+public class question {
+        Scanner sc=new Scanner(System.in);
+        String question,opt1,opt2,opt3,opt4,opt5;
+        int correctanswer,useranswer;
+        
+        public boolean askingquestions(){
+        	
+        	
+        	System.out.println(question);
+        	System.out.println();
+        	System.out.println("1) "+opt1);
+        	System.out.println("2) "+opt2);
+        	System.out.println("3) "+opt3);
+        	System.out.println("4) "+opt4);
+        	System.out.println("5) "+opt5);
+        	System.out.println("\"Please Choose an Option\"");
+        	useranswer=sc.nextInt();
+        	
+        	if(useranswer==correctanswer){
+        		return true;
+        	}
+        	return false;
+        }
+}

@@ -1,0 +1,15 @@
+package com.quizapplication;
+import java.util.Scanner;
+
+public class player {
+	Scanner sc=new Scanner(System.in);
+	String name;
+	int score =0;
+	   
+	   public void getdetails(){
+		   System.out.println("_______________Player Details______________");
+		   System.out.print("Enter Your Name :");
+		   name=sc.nextLine();
+	   }
+       
+}

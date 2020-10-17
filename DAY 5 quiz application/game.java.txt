@@ -1,0 +1,137 @@
+package com.quizapplication;
+
+public class game {
+       question[] questions=new question[10];
+       player player=new player();
+       
+       public void game(){
+    	   
+                   for(int i=0;i<10;i++){
+    	                questions[i]=new question();
+                   }     
+    	              
+                
+                
+               questions[0].question="Who's autobiography is \"THE Story of My Experiments With Truth\"?";
+               questions[0].opt1="Pandit Jawaharlal Nehru";
+               questions[0].opt2="Mahatma Gandhi";
+               questions[0].opt3="Sardar vallabhai Patel";
+               questions[0].opt4="Subhas Chandra Bose";	
+               questions[0].opt5="None of the Above";
+               questions[0].correctanswer=2;
+       
+               
+                
+               questions[1].question="Which City is called\"The City of Lakes\"?";
+               questions[1].opt1="Bangalore";
+               questions[1].opt2="Kochi";
+               questions[1].opt3="Jaipur";
+               questions[1].opt4="Bhopal";	
+               questions[1].opt5="None of the Above";
+               questions[1].correctanswer=4;
+               
+               
+               questions[2].question="Which City is called\"The Pink City \"?";
+               questions[2].opt1="Bangalore";
+               questions[2].opt2="Kochi";
+               questions[2].opt3="Jaipur";
+               questions[2].opt4="Bhopal";	
+               questions[2].opt5="None of the Above";
+               questions[2].correctanswer=3;
+               
+               
+              
+               questions[3].question="The Capital of Portuguese?";
+               questions[3].opt1="Seoul";
+               questions[3].opt2="Warsaw";
+               questions[3].opt3="Toronto";
+               questions[3].opt4="Sao Paulo";	
+               questions[3].opt5="None of the Above";
+               questions[3].correctanswer=4;
+               
+               
+               
+               questions[4].question="Which Ancient City has the name\"The World's Capital\"?";
+               questions[4].opt1="Babilon";
+               questions[4].opt2="Rome";
+               questions[4].opt3="Petra";
+               questions[4].opt4="Athens";	
+               questions[4].opt5="None of the Above";
+               questions[4].correctanswer=2;
+               
+               
+               
+               questions[5].question="Which of the following Character is from \"Alice in Wonderland\"?";
+               questions[5].opt1="Cheshire";
+               questions[5].opt2="Tintin";
+               questions[5].opt3="Donald Duck";
+               questions[5].opt4="Merida";	
+               questions[5].opt5="None of the Above";
+               questions[5].correctanswer=1;
+               
+               
+               
+               questions[6].question="Who invented the digital camera?";
+               questions[6].opt1="Martin Kopper";
+               questions[6].opt2="Edwin H Land";
+               questions[6].opt3="Steven Sason";
+               questions[6].opt4="David Varaun";	
+               questions[6].opt5="None of the Above";
+               questions[6].correctanswer=3;
+               
+               
+              
+               questions[7].question="Who invented the Artificial Legs called\"Jaipur Legs\"?";
+               questions[7].opt1="Edward Muybridge";
+               questions[7].opt2="DuPont";
+               questions[7].opt3="Cornelis Drebbel";
+               questions[7].opt4="Hilaire de Chardonnet";	
+               questions[7].opt5="None of the Above";
+               questions[7].correctanswer=4;
+               
+               
+               
+               questions[8].question="World's Largest migration?";
+               questions[8].opt1="Salomaon fish migration";
+               questions[8].opt2="Horizontal migration";
+               questions[8].opt3="Blue whale's migration";
+               questions[8].opt4="Artic bird's migartion";	
+               questions[8].opt5="None of the Above";
+               questions[8].correctanswer=5;
+               
+               
+               
+               questions[9].question="CRCF Stands for?";
+               questions[9].opt1="Central Reserve Police Force";
+               questions[9].opt2="Central Regional Police Force";
+               questions[9].opt3="Central Resolute Police Force";
+               questions[9].opt4="Central Rapid Police Force";	
+               questions[9].opt5="None of the Above";
+               questions[9].correctanswer=1;
+
+               }
+           public void play()
+           {
+        	   player.getdetails();{
+                
+        		System.out.println();   
+        	     for(int i=0;i<10;i++){
+        	    	 
+        		       System.out.print((i+1)+") ");
+        		          boolean status=questions[i].askingquestions();
+        		          
+        		                if(status==true){
+        			                      player.score=player.score+2;
+        		                }
+        		                else{ 
+        			                      player.score=player.score-1;
+        		                }   
+        	    }
+ 
+        	  } 
+        	   System.out.println(player.name+" Your Score is "+player.score);
+           }
+        
+       }       
+               
+               
