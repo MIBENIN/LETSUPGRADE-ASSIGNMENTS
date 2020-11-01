@@ -1,0 +1,90 @@
+________main.java________
+
+package comemployee
+
+
+public class main {
+    public static void main(String[] args){
+    doctor d1=new doctor();
+    engineer e1=new engineer();
+    pilot p1=new pilot();
+    
+      d1.getdetails();
+      d1.displaydetails();
+      
+    }	
+}
+
+
+_________employee.java___________
+
+
+import java.util.Scanner;
+
+public class employee {
+   String name;
+   int age;
+   double salary;
+   String designation;
+   
+   Scanner sc=new Scanner(System.in);
+   
+   public void getdetails(){
+	   System.out.println("ENTER YOUR NAME :");
+	   name=sc.nextLine();
+	   System.out.println("ENTER YOUR AGE :");
+	   age=sc.nextInt();
+	   System.out.println("ENTER YOUR DESIGNATION :");
+	   designation=sc.next();
+	   System.out.println("ENTER YOUR ANNUAL SALARY  :");
+	   salary=sc.nextDouble();
+   }
+   
+   public void displaydetails(){
+	   System.out.println("THE NAME OF THE EMPLOYEE :"+name);
+	   System.out.println("THE AGE OF THE EMPLOYEE :"+age);
+	   System.out.println("THE DESIGNATION OF THE EMPLOYEE :"+designation);
+	   System.out.println("THE ANNUAL SALARY OF THE EMPLOYEE :"+salary);
+	   
+   }
+}
+
+
+_________doctor.java_________
+
+package comemployee;
+
+import java.util.Scanner;
+
+public class doctor extends employee{
+	
+}
+
+
+______engineer.java_______
+
+package comemployee;
+
+import java.util.Scanner;
+
+public class engineer extends employee{
+	
+	
+}
+
+
+
+______pilot.java_______
+
+package comemployee;
+
+import java.util.Scanner;
+
+public class pilot extends employee{
+	
+	
+}
+
+
+
+
